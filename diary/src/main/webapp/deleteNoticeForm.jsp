@@ -30,7 +30,7 @@
 	<div><!-- Navigation-->
 		  <ul class="nav nav-tabs">	
               <li class="nav-item"><a class="nav-link" href="./home.jsp">홈으로</a></li>
-              <li class="nav-item"><a class="nav-link" href="./noticeList.jsp">공지 리스트</a></li>
+              <li class="nav-item"><a class="nav-link" href="./noticeList.jsp">노트 리스트</a></li>
               <li class="nav-item"><a class="nav-link" href="./scheduleList.jsp">캘린더</a></li>
           </ul>
       </div>
@@ -38,17 +38,17 @@
 	<form action="./deleteNoticeAction.jsp" method="post">
 		<table class="table table-bordered">
 			<tr class="center">
-				<td colspan="2" class="table-danger"><h3>&#10006;공지 삭제</h3></td>
+				<td colspan="2" class="table-danger"><h3>&#10006;노트 삭제</h3></td>
 			</tr>
 			<tr class="center">
-				<td>notice_no</td><!-- text 타입으로 하면 String과 int가 같지 않아 오류가 남.
+				<td>note_no</td><!-- text 타입으로 하면 String과 int가 같지 않아 오류가 남.
 				<td><input type="text" name="noticeNo" value="< %=noticeNo%>"></td>-->
 			<td>
 				<input type="number" name="noticeNo" value="<%=noticeNo%>" readonly="readonly" class="center">
 			</td>
 			</tr>
 			<tr class="center">
-				<td>notice_pw</td>
+				<td>note_pw</td>
 				<td><input type="password" name="noticePw" class="center"></td>
 			</tr>
 			<tr>

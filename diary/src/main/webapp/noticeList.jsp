@@ -80,7 +80,7 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>noticeList</title>
+	<title>noteList</title>
 	<!-- Latest compiled and minified CSS -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
 	<!-- Latest compiled JavaScript -->
@@ -98,7 +98,7 @@
 	<div><!-- Navigation-->
 		  <ul class="nav nav-tabs">	
               <li class="nav-item"><a class="nav-link" href="./home.jsp">홈으로</a></li>
-              <li class="nav-item"><a class="nav-link" href="./noticeList.jsp">공지 리스트</a></li>
+              <li class="nav-item"><a class="nav-link" href="./noticeList.jsp">노트 리스트</a></li>
               <li class="nav-item"><a class="nav-link" href="./scheduleList.jsp">캘린더</a></li>
           </ul>
       </div>
@@ -107,17 +107,17 @@
 	<table class="table table-bordered table-sm">
 		<tr class="center">
 			<td colspan="2" class="table-danger">
-				<h3>&#128227;공지사항</h3>
+				<h3>&#128227;노트</h3>
 			</td>
 		</tr>
 		<tr class="center">
 			<td colspan="2">
-				 <a href="./insertNoticeForm.jsp" class="btn btn-outline-secondary">공지입력</a>
+				 <a href="./insertNoticeForm.jsp" class="btn btn-outline-secondary">노트입력</a>
 			</td>
 		</tr>
 		<tr class="center">
-				<th><h4>notice_title</h4></th>
-				<th><h4>createdate</h4></th><!-- createdate는 datetime 형태로 db에 저장되어, 0000-00-00 00:00:00 이런 형태니까 1~10까지(날짜만 보이게) 잘라서 줘라. substirng쓰면 됨. -->
+				<th><h4>제목</h4></th>
+				<th><h4>등록일</h4></th><!-- createdate는 datetime 형태로 db에 저장되어, 0000-00-00 00:00:00 이런 형태니까 1~10까지(날짜만 보이게) 잘라서 줘라. substirng쓰면 됨. -->
 		</tr>
 		
 		<%		

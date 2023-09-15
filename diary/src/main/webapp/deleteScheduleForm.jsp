@@ -1,16 +1,15 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ page import="java.sql.*" %>
 <%
-	/* 
-		scheduleListByDate에서 넘어온 값: scheduleNumber
-			//<a href="./deleteScheduleForm.jsp?scheduleNumber= <%=rs.getInt("schedule_number")% >
-	*/
-/* 2. 유효성 검사 */
+	// scheduleListByDate에서 넘어온 값: scheduleNumber
+	
+	/* 유효성 검사 */
 	if(request.getParameter("scheduleNumber")==null
 	|| request.getParameter("scheduleNumber").equals("")){
 		response.sendRedirect("./scheduleListByDate.jsp");
 		return;
 	}
+
 	//디버깅
 	int scheduleNumber = Integer.parseInt(request.getParameter("scheduleNumber"));
 	System.out.println("deleteScheduleAction scheduleNumber: "+scheduleNumber);
@@ -31,13 +30,13 @@
 	</style>
 </head>
 <body>
-	<div><!-- 상단 네비게이션 -->
+	 <div><!-- 상단 네비게이션 -->
 		  <ul class="nav nav-tabs">	
               <li class="nav-item"><a class="nav-link" href="./home.jsp">홈으로</a></li>
               <li class="nav-item"><a class="nav-link" href="./noticeList.jsp">공지 리스트</a></li>
               <li class="nav-item"><a class="nav-link" href="./scheduleList.jsp">캘린더</a></li>
           </ul>
-      </div>  
+     </div>  
      <div class="container mt-3"> 
 		<form action="./deleteScheduleAction.jsp" method="post">
 			<table class="table table-bordered table-sm">
@@ -66,6 +65,6 @@
 				</tr>
 			</table>
 		</form>
-		</div>
+	</div>
 </body>
 </html>

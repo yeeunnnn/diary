@@ -64,7 +64,7 @@
 	<div><!-- Navigation-->
 		  <ul class="nav nav-tabs">	
               <li class="nav-item"><a class="nav-link" href="./home.jsp">홈으로</a></li>
-              <li class="nav-item"><a class="nav-link" href="./noticeList.jsp">공지 리스트</a></li>
+              <li class="nav-item"><a class="nav-link" href="./noticeList.jsp">노트 리스트</a></li>
               <li class="nav-item"><a class="nav-link" href="./scheduleList.jsp">캘린더</a></li>
           </ul>
       </div>
@@ -78,7 +78,7 @@
 
 		<table class="table table-bordered">
 			<tr class="center"><!-- 1행. -->
-				<td colspan="2" class="table-danger"><h3>&#9986;공지 수정</h3></td>
+				<td colspan="2" class="table-danger"><h3>&#9986;노트 수정</h3></td>
 			</tr>
 			<tr><!-- 2행. 오류메세지 -->
 				<td colspan="2" class="center">
@@ -95,7 +95,7 @@
 			</tr>
 			<tr class="center"><!-- 3행. 일치하는지 확인할 값 No, Pw -->
 				<td>
-					notice_no
+					note_no
 				</td>
 				<td><!-- where절에서 일치하는지 확인 -->
 					<input type="number" name="noticeNo" value="<%=notice.noticeNo%>" readonly="readonly" class="center"><!-- 프로그램 안에서는 다 카멜 표현식. DB는 안먹으니까 언더바!(바꿔주는 라이브러리도 있음) -->
@@ -103,7 +103,7 @@
 			</tr>
 			<tr class="center"><!-- 4행. -->
 				<td>
-					notice_pw
+					note_pw
 				</td>
 				<td>
 					<input type="password" name="noticePw" class="center">
@@ -111,7 +111,7 @@
 			</tr>
 			<tr class="center"><!-- 5행. 실제 수정할 내용!! set 안에 적기-->
 				<td>
-					notice_title
+					note_title
 				</td>
 				<td>
 					<input type="text" name="noticeTitle" value="<%=notice.noticeTitle%>" class="center">
@@ -119,7 +119,7 @@
 			</tr>
 			<tr class="center"><!-- 6행. -->
 				<td>
-					notice_content
+					note_content
 				</td>
 				<td class="center">
 					<textarea class="form-control" id="comment" rows="5" cols="80" name="noticeContent"><%=notice.noticeContent%></textarea>
@@ -127,7 +127,7 @@
 			</tr>
 			<tr class="center"><!-- 7행. 값 받지 않음. input 태그안에 있는 것만 Action으로 보낼 수 있음! -->
 				<td>
-					notice_writer
+					note_writer
 				</td>
 				<td>
 					<%=notice.noticeWriter%>
@@ -135,7 +135,7 @@
 			</tr>
 			<tr class="center"><!-- 8행. -->	
 				<td>
-					notice_create
+					note_create
 				</td>
 				<td>
 					<%=notice.createdate%>
@@ -143,7 +143,7 @@
 			</tr>
 			<tr class="center"><!-- 9행. update날짜는 Now로 값 받음 -->	
 				<td>
-					notice_update
+					note_update
 				</td>
 				<td>
 					<%=notice.updatedate%>

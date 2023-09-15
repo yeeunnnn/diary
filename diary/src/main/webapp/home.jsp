@@ -77,7 +77,7 @@
 		      			<td>
 			 	 			<p>
 				  				제목 : 다이어리<br>
-				  				기간 : 2023-04-05 ~ 2022-04-30<br>
+				  				기간 : 2023-04-05 ~ 2023-04-30<br>
 				  				인원 : 1명
 							</p>
 			 	 		</td>
@@ -105,12 +105,12 @@
 			<table class="table"><!--첫번째 테이블. 날짜 순 최근 공지 5개-->
 				<tr class="center">
 					<td colspan="2">
-						<h2>&#128227;공지사항</h2>
+						<h2>&#128227;노트</h2>
 					</td>
 				</tr>
 				<tr class="center">
-					<th class="table-danger">notice_no</th>
-					<th class="table-danger">createdate</th>
+					<th class="table-danger">노트번호</th>
+					<th class="table-danger">등록일</th>
 				</tr>
 			<%//resultset을 vo타입으로 바꾸어, for each문으로 ArrayList를 실행
 				for(Notice n : noticeList){

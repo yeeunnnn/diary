@@ -53,29 +53,29 @@
 	<div><!-- Navigation-->
 		  <ul class="nav nav-tabs">	
               <li class="nav-item"><a class="nav-link" href="./home.jsp">홈으로</a></li>
-              <li class="nav-item"><a class="nav-link" href="./noticeList.jsp">공지 리스트</a></li>
+              <li class="nav-item"><a class="nav-link" href="./noticeList.jsp">노트 리스트</a></li>
               <li class="nav-item"><a class="nav-link" href="./scheduleList.jsp">캘린더</a></li>
           </ul>
       </div>
     <div class="container mt-3">  
 	<table class="table table-bordered">
 		<tr class="center">
-			<td colspan="2" class="table-danger"><h3>&#128220;공지 상세</h3></td>
+			<td colspan="2" class="table-danger"><h3>&#128220;노트 상세</h3></td>
 		</tr>
 			<tr class="center">
-				<td>notice_no</td>
+				<td>note_no</td>
 				<td><%=notice.noticeNo%></td>
 			</tr>
 			<tr class="center">
-				<td>notice_title</td>
+				<td>note_title</td>
 				<td><%=notice.noticeTitle%></td>
 			</tr>
 			<tr class="center">
-				<td>notice_content</td>
+				<td>note_content</td>
 				<td><%=notice.noticeContent%></td>
 			</tr>
 			<tr class="center">
-				<td>notice_writer</td>
+				<td>note_writer</td>
 				<td><%=notice.noticeWriter%></td>
 			</tr>
 			<tr class="center">
