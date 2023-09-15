@@ -61,7 +61,7 @@
       <div>
 		  <ul class="nav nav-tabs">	
               <li class="nav-item"><a class="nav-link" href="./home.jsp">홈으로</a></li>
-              <li class="nav-item"><a class="nav-link" href="./noticeList.jsp">공지 리스트</a></li>
+              <li class="nav-item"><a class="nav-link" href="./noticeList.jsp">노트 리스트</a></li>
               <li class="nav-item"><a class="nav-link" href="./scheduleList.jsp">캘린더</a></li>
           </ul>
       </div>
@@ -86,7 +86,7 @@
 				  				- 일정이 포함된 달력 구현 및 페이징<br>
 				  	&nbsp;&nbsp;(Java 기본 API Calendar Class 사용)<br>
 				  				- 일정 조회와 입력, 수정, 삭제 기능 구현<br>
-				  				- 공지 조회와 입력, 수정, 삭제 및 페이징
+				  				- 노트 조회와 입력, 수정, 삭제 및 페이징
 							</p>
 			 	 		</td>
 			 	 		<td>
