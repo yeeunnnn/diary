@@ -33,7 +33,7 @@
 	 <div><!-- 상단 네비게이션 -->
 		  <ul class="nav nav-tabs">	
               <li class="nav-item"><a class="nav-link" href="./home.jsp">홈으로</a></li>
-              <li class="nav-item"><a class="nav-link" href="./noticeList.jsp">공지 리스트</a></li>
+              <li class="nav-item"><a class="nav-link" href="./noticeList.jsp">노트 리스트</a></li>
               <li class="nav-item"><a class="nav-link" href="./scheduleList.jsp">캘린더</a></li>
           </ul>
      </div>  
